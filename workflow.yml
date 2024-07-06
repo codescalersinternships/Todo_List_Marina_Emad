@@ -19,7 +19,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
-        go-version: '1.17'  # Update with your Go version
+        go-version: '1.17'  
 
     - name: Install dependencies
       run: |
@@ -35,7 +35,7 @@ jobs:
 
     - name: Run linter (optional)
       run: |
-        # Run any linter or static analysis tools here (e.g., golint, go vet)
+        
 
-    # Add more steps as needed, such as deploying to a server or Docker registry
+    
 
