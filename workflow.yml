@@ -1,0 +1,41 @@
+name: Go Build and Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: '1.17'  # Update with your Go version
+
+    - name: Install dependencies
+      run: |
+        go mod download
+
+    - name: Build
+      run: |
+        go build -o ./bin/myapp ./main.go
+
+    - name: Test
+      run: |
+        go test ./...
+
+    - name: Run linter (optional)
+      run: |
+        # Run any linter or static analysis tools here (e.g., golint, go vet)
+
+    # Add more steps as needed, such as deploying to a server or Docker registry
+
