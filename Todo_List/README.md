@@ -22,7 +22,7 @@ This is a simple Todo List application built with Go, Chi router, and MongoDB. I
 git clone https://github.com/codescalersinternships/Todo_List_Marina_Emad.git
 cd Todo_List_Marina_Emad
 ```
-###Install Dependencies
+### Install Dependencies
 
 ```sh
 go get -u github.com/go-chi/chi
