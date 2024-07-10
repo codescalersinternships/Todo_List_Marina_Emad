@@ -1,9 +1,27 @@
-Description: This project is a simple todo application built using Go (Golang) and MongoDB. 
+# Todo List Application
 
-Main Features: It provides RESTful APIs to manage todo items, including creating, fetching, updating, and deleting todos.
+This is a simple Todo List application built with Go, Chi router, and MongoDB. It provides CRUD operations for managing todo items.
 
-Prerequisites:
-    Go (Golang) installed on your machine.
-    MongoDB server running locally.
+## Features
 
-How to run: go run .
+- Create a new todo item
+- Retrieve all todo items
+- Update an existing todo item
+- Delete a todo item
+
+## Prerequisites
+
+- Go 1.16+
+- MongoDB
+
+## Getting Started
+
+### Clone the Repository
+
+```sh
+git clone https://github.com/codescalersinternships/Todo_List_Marina_Emad.git
+cd Todo_List_Marina_Emad
+
+
+## Run the Application
+go run main.go
