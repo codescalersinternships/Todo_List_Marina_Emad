@@ -18,7 +18,7 @@ This is a simple Todo List application built with Go, Chi router, and MongoDB. I
 
 ### Clone the Repository
 
-```sh
+
 git clone https://github.com/codescalersinternships/Todo_List_Marina_Emad.git
 cd Todo_List_Marina_Emad
 
